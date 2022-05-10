@@ -1,0 +1,54 @@
+
+.card-style{
+  display: block;
+  align-items: center;
+}
+
+.task-style{
+  display: inline-block;
+  text-align: center;
+
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  padding: 0.6rem;
+  margin: 0.5rem;
+  margin-top: 0;
+  width: 80vw;
+  border-radius: 0.6rem;
+  
+  color: black;
+}
+
+.date-style{
+  padding: 0.5rem;
+  margin: 0.5rem;
+  display: inline-block;
+
+  color: white;
+  border-radius: 0.6rem;
+
+  text-align: center;
+
+  background: rgba( 30, 32, 25, 0.8 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+p{
+  margin: 0;
+}
+
+.color-red{
+  background: rgba( 160, 62, 62, 0.6 );
+}
+
+.color-yellow{
+  background: rgba( 206, 201, 58, 0.6 );
+}
+
+.color-green{
+  background: rgba( 112, 142, 83, 0.6 );
+}

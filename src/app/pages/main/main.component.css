@@ -1,0 +1,122 @@
+#tasks{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.task-finished{
+  background: rgba( 188, 255, 123, 0.9 );
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  text-transform: uppercase;
+  height: auto ;
+  width: auto;
+  padding: 0.5rem;
+}
+
+.input{
+  height: 10vh;
+  width: 100vw;
+
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.input input{
+  width: 40vw;
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  padding-left: 0.5rem;
+  margin-right: 1.5rem;
+
+  border-bottom: 0.2rem rgba( 33, 131, 128, 0.4 ) solid;
+  transition: 0.5s;
+}
+
+.input input:focus{
+  border-bottom: 0.2rem rgba( 33, 131, 128, 0.7 ) solid;
+}
+
+.input select{
+  background: rgba( 0, 0, 0, 0.5 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  color: #ffff;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.input button{
+  background: rgba( 0, 0, 0, 0.5 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.5rem;
+
+  transition: 0.7s;
+}
+
+.input button:hover{
+  color: rgba( 0, 0, 0, 1);
+  
+  background: rgba( 63, 147, 3, 0.5);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );  
+}
+
+.cards{
+  margin-left: 1.5rem;
+}
+
+.alerta{
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+}
+
+p{
+  text-align: center;
+}
+
+.task-f{
+  display: inline-block;
+  margin: 2rem;
+  align-items: center;
+}
+
+.task{
+  margin: 1.5rem;
+  padding: 0.3rem;
+
+  background: rgba(125, 134, 117, 0.9);
+  backdrop-filter: blur( 6px );
+  -webkit-backdrop-filter: blur( 6px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  color: black;
+  font-weight: bold;
+  
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,14 @@
+<div class="card-style">
+  <div
+    class="task-style"
+    [class.color-red]="color == 'Alta'"
+    [class.color-yellow]="color == 'Média'"
+    [class.color-green]="color == 'Baixa'"
+  >
+    <p>{{ title }}</p>
+  </div>
+
+  <div class="date-style">
+    <p>{{ date | date: "dd/MM/yyyy" }}</p>
+  </div>
+</div>

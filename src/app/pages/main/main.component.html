@@ -1,0 +1,39 @@
+<div class="page-style">
+  <app-header></app-header>
+
+  <div class="input">
+    <input
+      type="text"
+      placeholder="Digite a sua tarefa..."
+      #task
+      class="input-group-lg"
+    />
+    <select #op>
+      <option>Alta</option>
+      <option>Média</option>
+      <option>Baixa</option>
+    </select>
+    <button (click)="add(task.value, op.value)">add</button>
+  </div>
+
+  <div *ngIf="alertDanger" class="alert alert-danger alerta" role="alert">
+    <p>Adicione o nome da tarefa</p>
+  </div>
+
+  <div class="cards">
+    <div *ngFor="let tarefa of tasks" id="tasks">
+      <card [title]="tarefa.text" [color]="tarefa.priority"></card>
+      <button class="task-finished" (click)="finished(tarefa.id)">
+        Finished
+      </button>
+    </div>
+  </div>
+
+  <div class="task-f" *ngIf="taskFinish.length > 0">
+    <h1>Tarefas finalizadas</h1>
+
+    <div *ngFor="let t of taskFinish" class='task'>
+      <p>{{ t[0].text }}</p>
+    </div>
+  </div>
+</div>
